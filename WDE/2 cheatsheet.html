@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>WDE mit Python Cheatsheet (Lehrerweiterbildung)</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+<style>
+table#css tr td:last-child {
+	background: lightblue
+}
+table#css tr td:first-child {
+	background: cadetblue;
+	color: white;
+}
+
+table#req tr td[colspan] {
+	background: #ffcfef;
+}
+table#req tr td:nth-child(2) {
+	background: plum;
+}
+
+table#bs tr td[colspan] {
+	background: #ffdfbf;
+}
+table#bs tr td:nth-child(2) {
+	background: rgb(255, 190, 105);
+}
+</style>
+<h1>Cheatsheet: WDE mit Python</h1>
+<table width=100%>
+<tr><td bgcolor="#EFFFEF" width=33%><center>
+<h2>Firefox</h2>
+F12-Taste
+<br/>
+$$('selector')
+<h2>CSS Selektoren</h2>
+<table id="css">
+	<tr><td>tag</td><td>HTML-Tag</td></tr>
+	<tr></td><td>.class</td><td>CSS-Klasse</td></tr>
+	<tr><td>#id</td><td>ID (eindeutig)</td></tr>
+	<tr><td>[attr]</td><td>Attribut</td></tr>
+	<tr><td>[attr="..."]</td><td>Attribut mit Wert</td></tr>
+	<tr><td>:pseudoclass</td><td>bspw. :first-child</td></tr>
+	<tr height=10px></tr>
+	<tr><td>elem, elem</td><td>Gruppe</td></tr>
+	<tr><td>elem elem</td><td>"Nachfahre"</td></tr>
+	<tr><td>elem > elem</td><td>direktes Kind</td></tr>
+	<tr><td>elem + elem</td><td>1. Kind</td></tr>
+</table>
+</center></td><td bgcolor="#FFEFF6" width=33%><center>
+<h2>Python</h2>
+len(string)
+<br/>
+type(object)
+<br/><br/>
+<h2>requests</h2>
+<table id="req">
+	  <tr>
+		<td colspan="2">get(url)</td>
+	  </tr>
+	  <tr>
+		<td width=30></td>
+		<td>.content</td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td>.text</td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td>.status_code</td>
+	  </tr>
+	</table>
+<br><br>
+<h2>Pandas</h2>
+read_html(html)
+</center></td><td bgcolor="#FFF6EF" width=33%><center>
+<h2>Beautiful Soup</h2>
+<table id="bs">
+	<!--
+	  <tr>
+		<td colspan="2">Parser:</td>
+	  </tr>
+	  <tr>
+		<td width=30></td>
+		<td>html.parser</td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td>lxml</td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td>xml</td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td>html5lib</td>
+	  </tr>
+-->
+	  <tr>
+		<td colspan="2">.find() / .find_all()</td>
+	  </tr>
+	  <tr>
+		<td width=30></td>
+		<td>class_=</td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td>href=</td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td>string=</td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td>id=</td>
+	  </tr>
+	  <tr>
+		<td colspan="2">.select_one() / .select()</td>
+	  </tr>
+	  <tr height=10></tr>
+	  <tr>
+		<td colspan="2">.text</td>
+	  </tr>
+	  <tr>
+		<td colspan="2">.string</td>
+	  </tr>
+	  <tr>
+		<td colspan="2">.&lt;tag-name&gt;</td>
+	  </tr>
+	  <tr>
+		<td colspan="2">.attrs["..."]</td>
+	  </tr>
+	  <tr height=10></tr>
+	  <tr>
+		<td colspan="2">.contents</td>
+	  </tr>
+	  <tr>
+		<td colspan="2">.children</td>
+	  </tr>
+	  <tr>
+		<td colspan="2">.descendants</td>
+	  </tr>
+	  <tr>
+		<td colspan="2">.parent(s)</td>
+	  </tr>
+	  <tr>
+		<td colspan="2">.next_sibling(s)</td>
+	  </tr>
+	  <tr>
+		<td colspan="2">.previous_sibling(s)</td>
+	  </tr>
+	</table>
+</center></td></tr>
+</table>
+</body>
+</html>
